@@ -1,0 +1,69 @@
+# Archivos de entorno
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Dependencias
+node_modules/
+bower_components/
+vendor/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Directorios de desarrollo
+dist/
+build/
+out/
+.nyc_output/
+coverage/
+
+# Archivos del IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración local
+*.local
+
+# Archivos de depuración
+debug.log
+
+# Archivos generados por el usuario
+*.pid
+*.seed
+*.pid.lock
+
+# Archivos de configuración personalizados
+/config/*.local.js
+/config/*.local.json
+
+# Archivos de sesión
+*.session
+
+# Archivos temporales
+*.tmp
+temp/
+
+# Archivos de pruebas
+/test/results/
+/test/coverage/
+
+# Archivos de documentación
+/docs/_build/
+/docs/_static/
+/docs/_templates/
+
+# Archivos de Docker
+docker-compose.override.yml
