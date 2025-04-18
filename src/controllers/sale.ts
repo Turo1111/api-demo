@@ -13,10 +13,9 @@ interface RequestExt extends Request {
   user?: string | JwtPayload | undefined | any
 }
 
-const postItem = async ({ body, user }: RequestExt, res: Response): Promise<void> => {
+const postItem = async ({ body }: RequestExt, res: Response): Promise<void> => {
   try {
-    const response = await insertSale({ ...body, user: new Types.ObjectId(user.id) })
-    console.log('body del boy', body)
+    const response = await insertSale({ ...body, user: new Types.ObjectId('67fbf3f45c0680a4549e5ade') })
     await Promise.all(
       body.itemsSale.map(async (item: any) => 
         await insertItemSale({ idProducto: item._id, total: item.total, cantidad: item.cantidad, idVenta: response._id, precio: item.precio })
