@@ -2,7 +2,7 @@
   "name": "api-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.ts",
   "scripts": {
     "lint": "ts-standard",
     "dev": "nodemon ./src/app.ts",
